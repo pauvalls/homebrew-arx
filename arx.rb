@@ -5,21 +5,21 @@
 class Arx < Formula
   desc "Architecture audit CLI for cross-language codebases"
   homepage "https://github.com/pauvalls/arx"
-  version "0.33.0"
+  version "0.34.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pauvalls/arx/releases/download/v0.33.0/arx_0.33.0_darwin_amd64.zip"
-      sha256 "c67dc97533dedd56cafe4bd513eab7614ee9521f67c5314ae9fedf9eece7e74c"
+      url "https://github.com/pauvalls/arx/releases/download/v0.34.0/arx_0.34.0_darwin_amd64.zip"
+      sha256 "056a27ae6c6078285ce753e201df2c1bdb83a1ef38599d66a5c16b2ee0bff644"
 
       define_method(:install) do
         bin.install "arx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pauvalls/arx/releases/download/v0.33.0/arx_0.33.0_darwin_arm64.zip"
-      sha256 "483c867ed384390d8cdde483c1c9af16ce1056a6012841dee38ed816a3dfb420"
+      url "https://github.com/pauvalls/arx/releases/download/v0.34.0/arx_0.34.0_darwin_arm64.zip"
+      sha256 "c5be356e8338f0ac2419b5179b7c51aeffb9c61b9ee555db6681d75aa483e348"
 
       define_method(:install) do
         bin.install "arx"
@@ -29,15 +29,15 @@ class Arx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pauvalls/arx/releases/download/v0.33.0/arx_0.33.0_linux_amd64.tar.gz"
-      sha256 "44a905df0c280403dd4c8421bd6ee827092ebfd52b3332ced8854899c2e2b676"
+      url "https://github.com/pauvalls/arx/releases/download/v0.34.0/arx_0.34.0_linux_amd64.tar.gz"
+      sha256 "2f3c0d1e9e25184a7db54e09aa6be13866fad5e95aa9960d37d369fcf8ff9d5b"
       define_method(:install) do
         bin.install "arx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pauvalls/arx/releases/download/v0.33.0/arx_0.33.0_linux_arm64.tar.gz"
-      sha256 "0d7dc32e061b745e9617654645ea8d157f5ff69261fdca31431aee670aa54848"
+      url "https://github.com/pauvalls/arx/releases/download/v0.34.0/arx_0.34.0_linux_arm64.tar.gz"
+      sha256 "e319408a5c398396aa04d782afa4d8799ce81411f999d6ece41b7b3635c544c6"
       define_method(:install) do
         bin.install "arx"
       end
