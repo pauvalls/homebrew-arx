@@ -11,7 +11,7 @@ class Arx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pauvalls/arx/releases/download/v0.28.0/arx_0.28.0_darwin_amd64.zip"
-      sha256 "778eb27e2a55772e1e2f676204aecbc3f168f1f30d3c4a6ab09b99695f53c34e"
+      sha256 "39efed4d0a22355ebc61607c50d5cf46a3b11a3fdb6063282b4e0f2666f68d9b"
 
       define_method(:install) do
         bin.install "arx"
@@ -19,7 +19,7 @@ class Arx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pauvalls/arx/releases/download/v0.28.0/arx_0.28.0_darwin_arm64.zip"
-      sha256 "9dfc0d9d9c9682c18fc5ca0e6c33d0c0023e7abce794afb3996681cf66970b99"
+      sha256 "3d66664e29f913d60e371f356750279282d62e18c1a8d7bacaeeaa12058b02fd"
 
       define_method(:install) do
         bin.install "arx"
@@ -30,14 +30,14 @@ class Arx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pauvalls/arx/releases/download/v0.28.0/arx_0.28.0_linux_amd64.tar.gz"
-      sha256 "c3bfd87f4e0e2399faa8a688b4d327381325466c02dcb01a27e5762017eba538"
+      sha256 "8369b6cfa52fb4becba8a8ad0b1062086d86f86339c29315f4420e375daccfc5"
       define_method(:install) do
         bin.install "arx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pauvalls/arx/releases/download/v0.28.0/arx_0.28.0_linux_arm64.tar.gz"
-      sha256 "67cb044348a0dc6993cda94ea5ca5279173dc06084c6a3284549878bf3b3582f"
+      sha256 "0b66451d2a3b053110d687e6f84ee9fa852fc96e74c5c7eef4c195c836d930e7"
       define_method(:install) do
         bin.install "arx"
       end
